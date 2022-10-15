@@ -36,12 +36,12 @@ int main(void)
 
 					printf("%d is zero\n", n);
 
-				else
+		else
 
-										printf("%d is negative\n", n);
+					printf("%d is negative\n", n);
 
 
 
-								return (0);
+		return (0);
 
 }
