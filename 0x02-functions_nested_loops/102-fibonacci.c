@@ -30,6 +30,6 @@ int main(void)
 				printf("%ld\n", fibonacci[i]);
 			else
 				printf("%ld, ", fibonacci[i]);
-			return (0);
 		}
+			return (0);
 }
