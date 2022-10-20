@@ -3,7 +3,10 @@
 
 /**
  * main - more functions
- * Return: 0
+ *
+ * @c: An input character
+ *
+ * Return: 1 if c is uppercase or 0 otherwise
  */
 
 int _isupper(int c)
