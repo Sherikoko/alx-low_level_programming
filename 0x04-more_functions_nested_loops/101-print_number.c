@@ -1,4 +1,6 @@
 #include "main.h"
+void print_integer(int o);
+
 
 /**
  * print_number - a function that prints an integr.
@@ -15,8 +17,25 @@ void print_number(int n)
 	else if (n < 0)
 	{
 		_putchar('-');
-		printf(n * -1);
+		print_integer(n * -1);
 	}
 	else
-		printf(n);
+		print_integer(n);
+}
+
+/**
+ * print_integer - A function to print n
+ * @m: ana input unsigned integer
+ * Return: Nothing
+ */
+
+void print_integer(int m)
+{
+	int i = 1000000000;
+
+	for (; i >= 1; i /= 10)
+		if (m / i != 0)
+		{
+			_putchar((m / i) % 10 + '0');
+		}
 }
