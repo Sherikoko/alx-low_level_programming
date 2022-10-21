@@ -31,9 +31,9 @@ void print_number(int n)
 
 void print_integer(int o)
 {
-	int i = 1000000000;
+	int i;
 
-	for (; i >= 1; i /= 10)
+	for (i = 1000000000; i >= 1; i /= 10)
 		if (o / i != 0)
 		{
 			_putchar((o / i) % 10 + '0');
