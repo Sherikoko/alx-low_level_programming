@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - more functions
+ * _isupper - a function that checks if a character is in uppercase
  *
  * @c: An input character
  *
