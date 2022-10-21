@@ -29,7 +29,7 @@ void print_number(int n)
  * Return: Nothing
  */
 
-void print_integer(int m)
+void print_integer(int o)
 {
 	int i = 1000000000;
 
