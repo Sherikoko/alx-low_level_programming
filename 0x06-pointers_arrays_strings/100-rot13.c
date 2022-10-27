@@ -1,29 +1,38 @@
 #include "main.h"
 
 /**
- * rot13 -  a function that encodes a string using rot13.
+ * rot13 - function that encodes a string using rot13.
  *
- * @s: An input string to encode using rot13
+ * @s: pointer pointed to the variable s , of type character
  *
- * Return: An encode string
+ * Return: Pointer P , pointed to the variable s of type char.
+ *
+ * Update V2.0 : using Pointers instead of arrays to minimize the use
+ *
+ * of allocated memory and to improve the esthetic and simplicity of the code.
  */
 
 char *rot13(char *s)
 
 {
-	int i = 0;
+	int i;
+	char *p = s;
+	char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *code = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (s[i] != '\0')
+	while (*s != '\0')
 	{
-		while ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+		i = 0;
+		while (i < 53)
 		{
-			if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
-				s[i] += 13;
-			else
-				s[i] -= 13;
+			if (*s == original[i])
+			{
+				*s = code[i];
+				break;
+			}
 			i++;
 		}
-		i++;
+		s++;
 	}
-	return (s);
+	return (p);
 }
