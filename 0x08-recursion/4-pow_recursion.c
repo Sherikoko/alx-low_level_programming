@@ -3,19 +3,14 @@
 
 
 /**
-
  * _pow_recursion - pow recursion
-
+ *
  * @x: integer params
-
- * @y: integer paramtr
-
+ *
+ * @y: integer paramter
+ *
  * Return: recursion
-
  */
-
-
-
 
 
 int _pow_recursion(int x, int y)
