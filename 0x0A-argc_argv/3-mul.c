@@ -3,16 +3,14 @@
 #include <stdlib.h>
 
 /**
+ * main - multiplies two numbers.
  *
- *  * main - multiplies two numbers.
+ * @argc: number of command line arguments.
  *
- *   * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
  *
- *    * @argv: array that contains the program command line arguments.
- *
- *     * Return: 0 - success.
- *
- *      */
+ * Return: 0 - success.
+ */
 
 int main(int argc, char *argv[])
 
